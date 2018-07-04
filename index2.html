@@ -8,7 +8,7 @@
       
       Date: 06/28/2018 
 
-      Filename: index.html
+      Filename: index2.html
    -->  
     
    <meta charset="utf-8" />
@@ -16,7 +16,23 @@
    <title>Recipe Display Application</title>
    <link rel="stylesheet" href="styles.css" />
    <script src="modernizr.custom.05819.js"></script>
-     
+   
+<script>
+
+$(document).ready(function(){
+
+function display2(event) {
+
+
+$(event.currentTarget).next("ul ~ li").animate( {height: ‘toggle’}, "slow");
+
+$(event.currentTarget).next("div ~ p").animate( {height: ‘toggle’}, "slow");
+ 
+
+}
+
+$("h3").click(display2);})
+</script>
 </head>
 
 <body>
@@ -54,8 +70,9 @@
       <center><img src="brownie.jpg" alt="BrownieApplication" style="width:452px;height:280px;">
       </center>
    </article>
-     <script src="jquery-1.11.1.min.js"> </script>
-<script src="script.js"> </script>
+
+<script src="jquery-1.11.1.min.js"></script>
+<script src="drill4.js"></script>
 </body>
 </html>
 
